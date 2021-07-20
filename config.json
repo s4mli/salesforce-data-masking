@@ -1,0 +1,338 @@
+{
+    "tags": {
+        "Project": "Ripley",
+        "Owner": "projectripley@seek.com.au",
+        "Stream": "GroupAppsEmployment"
+    },
+    "region": "ap-southeast-2",
+    "bucketName": "dropbox",
+    "archiveBucketName": "dropbox-archive",
+    "defaultMaskingRules": {
+        "word": {
+            "maskWith": "*",
+            "wordDelimiter": " ",
+            "unmaskedStartCharacters": 1,
+            "unmaskedEndCharacters": 1
+        },
+        "card": {
+            "maskWith": "*",
+            "unmaskedStartDigits": 4,
+            "unmaskedEndDigits": 1
+        },
+        "email": {
+            "maskWith": "x",
+            "unmaskedStartCharacters": 1,
+            "unmaskedEndCharacters": 0
+        },
+        "phone": {
+            "maskWith": "*",
+            "unmaskedStartDigits": 4,
+            "unmaskedEndDigits": 1
+        },
+        "string": {
+            "maskWith": "*",
+            "maskOnlyFirstOccurance": false,
+            "values": []
+        },
+        "password": {
+            "maskWith": "*",
+            "maxMaskedCharacters": 16
+        }
+    },
+    "objectMaskingRulesOverride": {
+        "candidate": {
+            "account_texts": {
+                "Name": {
+                    "word": {}
+                },
+                "BillingEmailAddress__c": {
+                    "email": {}
+                },
+                "Email__c": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "RegisteredCompanyName__c": {
+                    "word": {}
+                },
+                "TradingName__c": {
+                    "word": {}
+                }
+            },
+            "account": {
+                "Name": {
+                    "word": {
+                        "skipStartCharacters": 12
+                    }
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "Email": {
+                    "email": {}
+                },
+                "RegisteredCompanyName__c": {
+                    "word": {}
+                },
+                "TradingName__c": {
+                    "word": {}
+                }
+            },
+            "contact": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                }
+            },
+            "user": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                }
+            },
+            "lead": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                }
+            }
+        },
+        "rsp": {
+            "account_texts": {
+                "Name": {
+                    "word": {}
+                },
+                "BillingEmailAddress__c": {
+                    "email": {}
+                },
+                "Email__c": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "RegisteredCompanyName__c": {
+                    "word": {}
+                },
+                "TradingName__c": {
+                    "word": {}
+                }
+            },
+            "account": {
+                "Name": {
+                    "word": {}
+                },
+                "BillingEmailAddress__c": {
+                    "email": {}
+                },
+                "Email__c": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "RegisteredCompanyName__c": {
+                    "word": {}
+                },
+                "TradingName__c": {
+                    "word": {}
+                }
+            },
+            "contact": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "MobilePhone": {
+                    "phone": {}
+                }
+            },
+            "user": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                }
+            },
+            "task": {
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                }
+            },
+            "lead": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                }
+            }
+        },
+        "crm": {
+            "account_texts": {
+                "Name": {
+                    "word": {}
+                },
+                "BillingEmailAddress__c": {
+                    "email": {}
+                },
+                "Email__c": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "RegisteredCompanyName__c": {
+                    "word": {}
+                },
+                "TradingName__c": {
+                    "word": {}
+                }
+            },
+            "account": {
+                "Name": {
+                    "word": {}
+                },
+                "BillingEmailAddress__c": {
+                    "email": {}
+                },
+                "Email__c": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "RegisteredCompanyName__c": {
+                    "word": {}
+                },
+                "TradingName__c": {
+                    "word": {}
+                }
+            },
+            "contact": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                },
+                "MobilePhone": {
+                    "phone": {}
+                }
+            },
+            "user": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                }
+            },
+            "task": {
+                "Email": {
+                    "email": {}
+                },
+                "Phone": {
+                    "phone": {}
+                }
+            },
+            "lead": {
+                "FirstName": {
+                    "word": {}
+                },
+                "LastName": {
+                    "word": {}
+                },
+                "Email": {
+                    "email": {}
+                }
+            }
+        }
+    },
+    "qa": {
+        "id": "salesforce-data-masking-qa",
+        "vpcId": "vpc-e1b35585",
+        "account": "522216600505",
+        "layer": {
+            "name": "sfdc-data-migration-helper-qa",
+            "version": 16
+        },
+        "loaderBucketName": "sfdc-data-loader-qa-dropbox"
+    },
+    "staging": {
+        "id": "salesforce-data-masking-staging",
+        "vpcId": "vpc-e1b35585",
+        "account": "522216600505",
+        "layer": {
+            "name": "sfdc-data-migration-helper-staging",
+            "version": 2
+        },
+        "loaderBucketName": "sfdc-data-loader-staging-dropbox"
+    },
+    "prod": {
+        "id": "salesforce-data-masking",
+        "vpcId": "vpc-08b3556c",
+        "account": "344717109259",
+        "layer": {
+            "name": "sfdc-data-migration-helper-prod",
+            "version": 1
+        },
+        "loaderBucketName": "sfdc-data-loader-dropbox"
+    }
+}
